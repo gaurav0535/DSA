@@ -12,4 +12,3 @@ def fun(a,n):
 a = [12,10,30,50,100]
 print(fun(a,5))
 
-print(int(1/2))
