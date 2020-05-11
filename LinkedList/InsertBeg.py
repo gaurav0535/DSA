@@ -18,7 +18,6 @@ class SLinkedList:
 
     def begning(self,data):
         NewNode = Node(data)
-       # print(data)
         NewNode.next = self.head
         self.head = NewNode
 
