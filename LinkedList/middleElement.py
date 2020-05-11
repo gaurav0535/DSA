@@ -27,12 +27,35 @@ class SlinkedList:
         first = self.head
         second = self.head
 
+        #while  first.next !=None and first.next.next != None:
         while  first !=None and first.next != None:
             print("Fast ptr",first.data)
             print("Slow ptr", second.data)
             first = first.next.next
+            if first == None:
+                print("Gaurav")
+
             second = second.next
         print(second.data)
+
+        if (first == None):
+            print("Even")
+
+        elif first.next == None:
+            print("odd")
+
+
+    """def check(self):
+        checkData = self.head
+        print(checkData.next.data)
+
+        #checkData.next = checkData.next.next.next.next.next.next
+
+        print(checkData.next.data)
+        print(checkData.data)"""
+
+
+# 1 2 3 4 5 6 7
 
 SList = SlinkedList()
 SList.head = Node(1)
@@ -54,8 +77,16 @@ n4.next = n5
 n5.next = n6
 n6.next = n7
 #n7.next = n8
-#SList.trav()
-SList.middle()
+print("Traversal")
+SList.trav()
+
+print("Work on middle element")
+#SList.middle()
+
+
+SList.check()
+
+
 
 
 
