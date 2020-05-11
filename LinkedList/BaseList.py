@@ -42,7 +42,7 @@ l1.trav()
 
 print("Before big one")
 l.trav()
-print("after last")
+print("after last ")
 SLinkedList().trav()
 
 
