@@ -1,42 +1,61 @@
 class Node:
-
-    # Function to initialise the node object
-    def __init__(self, data):
+    def __init__(self,data):
         self.data = data
         self.next = None
 
-
-class LL:
-
+class SlinkedList:
     def __init__(self):
         self.head = None
 
-    def push(self, new_data):
-        new_node = Node(new_data)
-        new_node.next = self.head
-        self.head = new_node
+    def trav(self):
 
-        # Function to get the middle of
+        printval = self.head
+        if(printval):
 
-    # the linked list
-    def middle(self):
-        slow_ptr = self.head
-        fast_ptr = self.head
+            if(printval.next == None):
+                print(printval.data)
+            else:
+                while(printval != None):
+                    print(printval.data)
+                    printval = printval.next
 
-        if self.head is not None:
-            #while (fast_ptr is not None and fast_ptr.next is not None):
-            while (fast_ptr is not None and fast_ptr.next.next is not None):
-                fast_ptr = fast_ptr.next.next
-                slow_ptr = slow_ptr.next
-            print(slow_ptr.data)
-
-        # Driver code
+        else:
+            print("Nothing is in linked list ")
 
 
-list1 = LL()
-list1.push(1)
-list1.push(2)
-list1.push(3)
-list1.push(5)
-list1.push(6)
-list1.middle()
+    def middle(self,):
+        first = self.head
+        second = self.head
+
+        while  first !=None and first.next != None:
+            print("Fast ptr",first.data)
+            print("Slow ptr", second.data)
+            first = first.next.next
+            second = second.next
+        print(second.data)
+
+SList = SlinkedList()
+SList.head = Node(1)
+n2 = Node(2)
+n3 = Node(3)
+n4 = Node(4)
+n5 = Node(5)
+n6 = Node(6)
+n7 = Node(7)
+n8 = Node(8)
+
+#   1 2 3 4 5 6 7 8
+
+
+SList.head.next = n2
+n2.next = n3
+n3.next = n4
+n4.next = n5
+n5.next = n6
+n6.next = n7
+#n7.next = n8
+#SList.trav()
+SList.middle()
+
+
+
