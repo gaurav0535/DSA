@@ -4,3 +4,6 @@ class Node:
         self.right = None
         self.key = data
 
+
+
+
