@@ -16,4 +16,4 @@ def PalinArray(arr ,n):
     return
 
 
-print(PalinArray([12,1,2,3],2))
+print(PalinArray([12,1,3],2))

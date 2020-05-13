@@ -12,4 +12,4 @@ def convertFive(n):
     return new_num
 
 
-print(convertFive(1011232))
+print(convertFive(101122))
