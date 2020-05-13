@@ -1,7 +1,7 @@
 def convertFive(n):
     #Code here
     i = 0
-    new_num = 0
+    new_num = ""
     while(n > 0):
         i = int(n%10)
         n = int(n/10)
