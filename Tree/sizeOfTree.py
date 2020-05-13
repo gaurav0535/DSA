@@ -4,7 +4,7 @@ from SingleNode import Node
 
 # preOrder = N L R
 # inOrder = L K R
-# postOrder = L R K
+# postOrder = L R N
 
 
 def size(root):
